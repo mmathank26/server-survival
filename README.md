@@ -152,6 +152,19 @@ A fully customizable testing environment for experimenting with any architecture
 Join our Discord server to discuss strategies and share your high scores:
 [Join Discord](https://discord.gg/f38NgHDwnK)
 
+## Dockerfile to build container Image
+
+Dockerfile is added to build container image run below command to build the image :
+
+docker build -t server-survival .
+
+To run the docker container locally :
+ 
+docker run -d \
+-p 4040:80 \
+--name server-survival-game \
+server-survival:latest
+
 ---
 
 _Built with code and chaos._
